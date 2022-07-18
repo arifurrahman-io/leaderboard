@@ -223,8 +223,17 @@ hr {
 @media only screen and (max-width:688px) {
 
     .menu-bar {
+        width: 100%;
         margin-left: 20px;
-        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .header {
+        width: 100%;
+    }
+
+    .menu ul {
+        display: none;
     }
 
     .container {
@@ -250,6 +259,8 @@ hr {
     .blog,
     .course {
         flex-direction: column;
+        align-items: center;
+        align-items: center;
     }
 
     .blog img {
