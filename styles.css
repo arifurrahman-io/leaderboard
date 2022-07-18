@@ -3,8 +3,67 @@
 
 
 body {
+    margin: 0px;
     background-color: #F3F1FF;
     font-family: 'Poppins', sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    background-color: #562EFF;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+.menu-bar {
+    display: flex;
+    width: 870px;
+    justify-content: space-between;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.menu ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu li {
+    font-size: 16px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #F3F1FF;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+}
+
+.icon h2 {
+    color: #F3F1FF;
+}
+
+.icon img {
+    width: 41px;
+    height: 51px;
+    margin-right: 10px;
 }
 
 main {
@@ -127,7 +186,7 @@ hr {
 
 .course-footer {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -163,11 +222,19 @@ hr {
 
 @media only screen and (max-width:688px) {
 
+    .menu-bar {
+        margin-left: 20px;
+        margin-left: 20px;
+    }
 
-    /* .container {
+    .container {
         width: 100%;
-        margin: 0px;
-    } */
+    }
+
+    .section-header-text {
+        display: flex;
+        justify-content: center;
+    }
 
     .players {
         grid-template-columns: repeat(2, 1fr);
@@ -176,6 +243,7 @@ hr {
     .blogs,
     .courses {
         grid-template-columns: repeat(1, 1fr);
+
     }
 
     .player,
@@ -183,16 +251,56 @@ hr {
     .course {
         flex-direction: column;
     }
+
+    .blog img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .blog h3 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .blog p {
+        display: flex;
+        justify-content: center;
+    }
+
+    .blog span {
+        margin-left: 5px;
+    }
+
+    .course-mentor {
+        display: flex;
+        justify-content: center;
+    }
+
+    .course h3 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .course img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 /* Tablet Devices */
 
 @media only screen and (min-width:688px) and (max-width:992px) {
 
-    /* .container {
+    .container {
         width: 100%;
-        margin: 0%;
-    } */
+    }
+
+    .menu-bar {
+        margin-left: 20px;
+        margin-left: 20px;
+    }
 
     .players,
     .courses {
