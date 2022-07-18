@@ -4,17 +4,16 @@
 
 body {
     background-color: #F3F1FF;
+    font-family: 'Poppins', sans-serif;
 }
 
 main {
-    font-family: 'Poppins', sans-serif;
-    width: 100%;
+    display: grid;
+    justify-content: center;
 }
 
 .container {
     margin-top: 25px;
-    margin-left: 285px;
-    margin-right: 285px;
     margin-bottom: 25px;
     background-color: #FFFFFF;
     border-radius: 5px;
@@ -158,4 +157,45 @@ hr {
 .course-duration p {
     color: #FF4A60;
     margin-left: 11px;
+}
+
+/* Meadia Queries */
+
+@media only screen and (max-width:688px) {
+    .container {
+        width: 100%;
+    }
+
+    .players {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .blogs,
+    .courses {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .player,
+    .blog,
+    .course {
+        flex-direction: column;
+    }
+}
+
+/* Tablet Devices */
+
+@media only screen and (min-width:688px) and (max-width:992px) {
+
+    .container {
+        width: 100%;
+    }
+
+    .players,
+    .courses {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .blogs {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
