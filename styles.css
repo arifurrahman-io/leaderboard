@@ -8,6 +8,7 @@ body {
 
 main {
     font-family: 'Poppins', sans-serif;
+    width: 100%;
 }
 
 .container {
@@ -18,11 +19,12 @@ main {
     background-color: #FFFFFF;
     border-radius: 5px;
     width: 870px;
-    padding: 33px;
+    padding: 30px;
+
 }
 
 .section-header-text {
-    margin-left: 33px;
+    margin-left: 35px;
     color: #562EFF;
     font-size: 24px;
 }
@@ -67,7 +69,7 @@ hr {
     margin-bottom: 15px;
     margin-right: 30px;
     box-shadow: 0px 5px 13px rgba(0, 0, 0, 0.05);
-
+    padding: 10px;
 }
 
 .blog-text {
@@ -84,9 +86,11 @@ hr {
     width: 177px;
 }
 
-.courses-box {
+.courses {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    margin-left: 39px;
+    margin-right: 39px;
 }
 
 .course {
@@ -98,6 +102,10 @@ hr {
 .course img {
     width: 224px;
     height: 104px;
+}
+
+.course-mentor {
+    color: #ED6B4F;
 }
 
 .course-rating {
@@ -117,6 +125,7 @@ hr {
 .course-footer {
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 .course-rating {
@@ -142,7 +151,7 @@ hr {
     border-radius: 15px;
     padding: 10px;
     font-size: 15px;
-    height: 30px;
+    height: 15px;
     width: 95px;
 }
 
